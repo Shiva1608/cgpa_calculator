@@ -1,0 +1,51 @@
+[
+{
+    "sem" : 1,
+    "name" : "COMMUNICATIVE ENGLISH",
+    "code" : "HS5152",
+    "credits" : "3",
+    "grade" : ""
+  },
+  {
+    "name": "COMMUNICATION SKILL LABORATORY (LANGUAGE)",
+    "code": "HS5161",
+    "credits": "2",
+    "sem": 1,
+    "grade": ""
+  },
+  {
+    "name": "CALCULUS",
+    "code": "MA5151",
+    "credits": "4",
+    "sem": 1,
+    "grade": ""
+  },
+  {
+    "name": "APPLIED PHYSICS",
+    "code": "PH5152",
+    "credits": "4",
+    "sem": 1,
+    "grade": ""
+  },
+  {
+    "name": "DIGITAL SYSTEMS",
+    "code": "XC5151",
+    "sem": 1,
+    "credits": "4",
+    "grade": ""
+  },
+  {
+    "name": "PROBLEM SOLVING AND C PROGRAMMING",
+    "code": "XC5152",
+    "sem": 1,
+    "credits": "3",
+    "grade": ""
+  },
+  {
+    "name": "C PROGRAMMING LABORATORY",
+    "code": "XC5161",
+    "sem": 1,
+    "credits": "2",
+    "grade": ""
+  }
+]

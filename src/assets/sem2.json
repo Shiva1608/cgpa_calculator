@@ -1,0 +1,51 @@
+[
+    {
+        "sem" : 2,
+        "name" : "CHEMISTRY OF MATERIALS",
+        "code" : "CY5253",
+        "credits" : "4",
+        "grade" : ""
+      },
+      {
+        "name": "TECHNICAL COMMUNICATION",
+        "code": "HS5252",
+        "credits": "3",
+        "sem": 2,
+        "grade": ""
+      },
+      {
+        "name": "TRANSFORM TECHNIQUES AND PARTIAL DIFFERENTIAL EQUATIONS",
+        "code": "MA5251",
+        "credits": "4",
+        "sem": 2,
+        "grade": ""
+      },
+      {
+        "name": "OBJECT ORIENTED PROGRAMMING IN C++",
+        "code": "XC5251",
+        "credits": "4",
+        "sem": 2,
+        "grade": ""
+      },
+      {
+        "name": "DATA STRUCTURES",
+        "code": "XC5252",
+        "sem": 2,
+        "credits": "3",
+        "grade": ""
+      },
+      {
+        "name": "COMPUTER ARCHITECTURE",
+        "code": "XC5253",
+        "sem": 2,
+        "credits": "3",
+        "grade": ""
+      },
+      {
+        "name": "DATA STRUCTURES LABORATORY",
+        "code": "XC5261",
+        "sem": 2,
+        "credits": "2",
+        "grade": ""
+      }
+    ]

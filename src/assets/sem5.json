@@ -1,0 +1,51 @@
+[
+    {
+        "sem": 5,
+        "name" : "CRYPTOGRAPHY AND DATA SECURITY (or) ADVANCED DATABASE MANAGEMENT SYSTEMS",
+        "code" : "XC5501/XT5501",
+        "credits" : "4",
+        "grade" : ""
+      },
+      {
+        "name": "SOFTWARE ENGINEERING",
+        "code": "XC5551",
+        "credits": "3",
+        "sem": 5,
+        "grade": ""
+      },
+      {
+        "name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+        "code": "XC5552",
+        "credits": "4",
+        "sem": 5,
+        "grade": ""
+      },
+      {
+        "name": "SOFTWARE DEVELOPMENT LABORATORY",
+        "code": "XC5561",
+        "credits": "2",
+        "sem": 5,
+        "grade": ""
+      },
+      {
+        "name": "OPEN SOURCE SYSTEMS",
+        "code": "XT5074",
+        "sem": 5,
+        "credits": "3",
+        "grade": ""
+      },
+      {
+        "name": "SOFTWARE PROJECT MANAGEMENT",
+        "code": "XT5076",
+        "sem": 5,
+        "credits": "3",
+        "grade": ""
+      },
+      {
+        "name": "DATA WAREHOUSING AND MINING",
+        "code": "XT5551",
+        "sem": 5,
+        "credits": "4",
+        "grade": ""
+      }
+    ]

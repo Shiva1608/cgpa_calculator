@@ -69,6 +69,7 @@ import sem4Data from "@/assets/sem4.json";
 import sem5Data from "@/assets/sem5.json";
 import sem6Data from "@/assets/sem6.json";
 import sem7Data from "@/assets/sem7.json";
+import sem8Data from "@/assets/sem8.json";
 export default {
   name: "CgpaCalciSemesterPage",
   components: {
@@ -85,6 +86,7 @@ export default {
         sem5: sem5Data,
         sem6: sem6Data,
         sem7: sem7Data,
+        sem8: sem8Data,
       },
     };
   },

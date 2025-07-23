@@ -1,51 +1,74 @@
 [
-    {
-        "sem": 6,
-        "name" : "OPERATIONS RESEARCH",
-        "code" : "XC5651",
-        "credits" : "4",
-        "grade" : ""
-      },
-      {
-        "name": "ARTIFICIAL INTELLIGENCE",
-        "code": "XC5652",
-        "credits": "4",
-        "sem": 6,
-        "grade": ""
-      },
-      {
-        "name": "SOFT COMPUTING",
-        "code": "XT5080",
-        "credits": "3",
-        "sem": 6,
-        "grade": ""
-      },
-      {
-        "name": "PRINCIPLES OF COMPILER DESIGN / COMPUTER GRAPHICS AND MULTIMEDIA",
-        "code": "XC5601/XT5601",
-        "credits": "3",
-        "sem": 5,
-        "grade": ""
-      },
-      {
-        "name": "COMPILER DESIGN LABORATORY / COMPUTER GRAPHICS AND MULTIMEDIA LABORATORY",
-        "code": "XC5611/XT5611",
-        "sem": 6,
-        "credits": "2",
-        "grade": ""
-      },
-      {
-        "name": "MINI PROJECT",
-        "code": "XT5612",
-        "sem": 6,
-        "credits": "2",
-        "grade": ""
-      },
-      {
-        "name": "WEB TECHNOLOGY",
-        "code": "XT5651",
-        "sem": 6,
-        "credits": "3",
-        "grade": ""
-      }
-    ]
+  {
+    "sem": 6,
+    "name": "OPERATIONS RESEARCH",
+    "code": "XC5651",
+    "credits": "4",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "ARTIFICIAL INTELLIGENCE",
+    "code": "XC5652",
+    "credits": "4",
+    "sem": 6,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "PROGRAM ELECTIVE - III",
+    "code": "XX56XX",
+    "credits": "3",
+    "sem": 6,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "PRINCIPLES OF COMPILER DESIGN",
+    "code": "XC5601",
+    "credits": "3",
+    "sem": 5,
+    "grade": "",
+    "course": "cs"
+  },
+  {
+    "name": "COMPUTER GRAPHICS AND MULTIMEDIA",
+    "code": "XT5601",
+    "credits": "3",
+    "sem": 5,
+    "grade": "",
+    "course": "it"
+  },
+  {
+    "name": "COMPILER DESIGN LABORATORY",
+    "code": "XC5611",
+    "sem": 6,
+    "credits": "2",
+    "grade": "",
+    "course": "cs"
+  },
+  {
+    "name": "COMPUTER GRAPHICS AND MULTIMEDIA LABORATORY",
+    "code": "XT5611",
+    "sem": 6,
+    "credits": "2",
+    "grade": "",
+    "course": "it"
+  },
+  {
+    "name": "MINI PROJECT",
+    "code": "XT5612",
+    "sem": 6,
+    "credits": "2",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "WEB TECHNOLOGY",
+    "code": "XT5651",
+    "sem": 6,
+    "credits": "3",
+    "grade": "",
+    "course": "common"
+  }
+]

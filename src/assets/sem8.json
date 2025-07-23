@@ -1,51 +1,58 @@
 [
-    {
-        "sem": 8,
-        "name" : "ENVIRONMENTAL SCIENCE AND ENGINEERING",
-        "code" : "GE5851",
-        "credits" : "3",
-        "grade" : ""
-      },
-      {
-        "name": "ADVANCED STATISTICAL METHODS FOR COMPUTING",
-        "code": "MA5851",
-        "credits": "4",
-        "sem": 8,
-        "grade": ""
-      },
-      {
-        "name": "CREATIVE AND INNOVATIVE PROJECT",
-        "code": "XC5811",
-        "credits": "2",
-        "sem": 8,
-        "grade": ""
-      },
-      {
-        "name": "PROFESSIONAL PHOTOGRAPHY",
-        "code": "XM5892",
-        "credits": "3",
-        "sem": 8,
-        "grade": ""
-      },
-      {
-        "name": "TOTAL QUALITY MANAGEMENT",
-        "code": "XT5087",
-        "sem": 8,
-        "credits": "3",
-        "grade": ""
-      },
-      {
-        "name": "BIG DATA ANALYTICS",
-        "code": "XT5851",
-        "sem": 8,
-        "credits": "4",
-        "grade": ""
-      },
-      {
-        "name": "DISTRIBUTED AND CLOUD COMPUTING",
-        "code": "XT5852",
-        "sem": 8,
-        "credits": "4",
-        "grade": ""
-      }
-    ]
+  {
+    "sem": 8,
+    "name": "ENVIRONMENTAL SCIENCE AND ENGINEERING",
+    "code": "GE5851",
+    "credits": "3",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "ADVANCED STATISTICAL METHODS FOR COMPUTING",
+    "code": "MA5851",
+    "credits": "4",
+    "sem": 8,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "CREATIVE AND INNOVATIVE PROJECT",
+    "code": "XC5811",
+    "credits": "2",
+    "sem": 8,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "OPEN ELECTIVE - III",
+    "code": "XX58XX",
+    "credits": "3",
+    "sem": 8,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "PROGRAM ELECTIVE - IV",
+    "code": "XT5087",
+    "sem": 8,
+    "credits": "3",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "BIG DATA ANALYTICS",
+    "code": "XT5851",
+    "sem": 8,
+    "credits": "4",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "DISTRIBUTED AND CLOUD COMPUTING",
+    "code": "XT5852",
+    "sem": 8,
+    "credits": "4",
+    "grade": "",
+    "course": "common"
+  }
+]

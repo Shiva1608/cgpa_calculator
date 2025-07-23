@@ -1,9 +1,18 @@
 [
-    {
-        "sem": 7,
-        "name" : "INDUSTRIAL PROJECT",
-        "code" : "XC5711/XT5711",
-        "credits" : "16",
-        "grade" : ""
-      }
-    ]
+  {
+    "sem": 7,
+    "name": "INDUSTRIAL PROJECT",
+    "code": "XC5711",
+    "credits": "16",
+    "grade": "",
+    "course": "cs"
+  },
+  {
+    "sem": 7,
+    "name": "INDUSTRIAL PROJECT",
+    "code": "XT5711",
+    "credits": "16",
+    "grade": "",
+    "course": "it"
+  }
+]

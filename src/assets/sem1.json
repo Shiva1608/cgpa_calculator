@@ -4,48 +4,55 @@
     "name" : "COMMUNICATIVE ENGLISH",
     "code" : "HS5152",
     "credits" : "3",
-    "grade" : ""
+    "grade" : "",
+    "course" : "common"
   },
   {
     "name": "COMMUNICATION SKILL LABORATORY (LANGUAGE)",
     "code": "HS5161",
     "credits": "2",
     "sem": 1,
-    "grade": ""
+    "grade": "",
+    "course": "common"
   },
   {
     "name": "CALCULUS",
     "code": "MA5151",
     "credits": "4",
     "sem": 1,
-    "grade": ""
+    "grade": "",
+    "course": "common"
   },
   {
     "name": "APPLIED PHYSICS",
     "code": "PH5152",
     "credits": "4",
     "sem": 1,
-    "grade": ""
+    "grade": "",
+    "course" : "common"
   },
   {
     "name": "DIGITAL SYSTEMS",
     "code": "XC5151",
     "sem": 1,
     "credits": "4",
-    "grade": ""
+    "grade": "",
+    "course" : "common"
   },
   {
     "name": "PROBLEM SOLVING AND C PROGRAMMING",
     "code": "XC5152",
     "sem": 1,
     "credits": "3",
-    "grade": ""
+    "grade": "",
+    "course" : "common"
   },
   {
     "name": "C PROGRAMMING LABORATORY",
     "code": "XC5161",
     "sem": 1,
     "credits": "2",
-    "grade": ""
+    "grade": "",
+    "course" : "common"
   }
 ]

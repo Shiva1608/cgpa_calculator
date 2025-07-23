@@ -1,51 +1,57 @@
 [
-    {
-        "sem": 3,
-        "name" : "LOGIC AND ABSTRACT ALGEBRA",
-        "code" : "MA5351",
-        "credits" : "4",
-        "grade" : ""
-      },
-      {
-        "name": "COMBINATORICS AND GRAPH THEORY",
-        "code": "XC5351",
-        "credits": "4",
-        "sem": 3,
-        "grade": ""
-      },
-      {
-        "name": "MICROPROCESSOR AND APPLICATIONS",
-        "code": "XC5352",
-        "credits": "4",
-        "sem": 3,
-        "grade": ""
-      },
-      {
-        "name": "OPERATING SYSTEMS",
-        "code": "XC5353",
-        "credits": "3",
-        "sem": 3,
-        "grade": ""
-      },
-      {
-        "name": "SIGNALS AND SYSTEMS",
-        "code": "XC5354",
-        "sem": 3,
-        "credits": "4",
-        "grade": ""
-      },
-      {
-        "name": "OPERATING SYSTEMS LABORATORY",
-        "code": "XC5361",
-        "sem": 3,
-        "credits": "2",
-        "grade": ""
-      },
-      {
-        "name": "PYTHON PROGRAMMING LABORATORY",
-        "code": "XC5362",
-        "sem": 3,
-        "credits": "2",
-        "grade": ""
-      }
-    ]
+  {
+    "sem": 3,
+    "name": "LOGIC AND ABSTRACT ALGEBRA",
+    "code": "MA5351",
+    "credits": "4",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "COMBINATORICS AND GRAPH THEORY",
+    "code": "XC5351",
+    "credits": "4",
+    "sem": 3,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "MICROPROCESSOR AND APPLICATIONS",
+    "code": "XC5352",
+    "credits": "4",
+    "sem": 3,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "OPERATING SYSTEMS",
+    "code": "XC5353",
+    "credits": "3",
+    "sem": 3,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "SIGNALS AND SYSTEMS",
+    "code": "XC5354",
+    "sem": 3,
+    "credits": "4",
+    "grade": ""
+  },
+  {
+    "name": "OPERATING SYSTEMS LABORATORY",
+    "code": "XC5361",
+    "sem": 3,
+    "credits": "2",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "PYTHON PROGRAMMING LABORATORY",
+    "code": "XC5362",
+    "sem": 3,
+    "credits": "2",
+    "grade": "",
+    "course": "common"
+  }
+]

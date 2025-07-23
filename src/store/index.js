@@ -91,8 +91,6 @@ export default new Vuex.Store({
     const subjects = payload[semKey];
     for (const subject of subjects) {
       const course = subject.course?.toLowerCase?.();
-
-      // Include selected course and "common"
       if (course !== selectedCourse && course !== "common") continue;
 
       if (!subject.grade || subject.grade === "U") continue;
@@ -110,8 +108,8 @@ export default new Vuex.Store({
   if (creds === 0) return;
 
   context.commit("UPDATE_CGPA", total / creds);
-}
-,
+},
+
 
     updateCourse(context, payload) {
       context.commit("UPDATE_COURSE", payload);

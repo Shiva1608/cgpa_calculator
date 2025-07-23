@@ -45,7 +45,7 @@ export default new Vuex.Store({
   },
   actions: {
     addGPA(context, payload) {
-      let grade_point = {
+      const grade_point = {
         O: 10,
         "A+": 9,
         A: 8,
@@ -54,24 +54,26 @@ export default new Vuex.Store({
         C: 5,
         U: 0,
       };
+
       let gpa = 0.0;
       let credits = 0;
+
       for (let i of payload) {
-        if (i.grade === "U") {
-          continue;
-        }
+        if (i.grade === "U") continue;
         credits += parseInt(i.credits);
-        // eslint-disable-next-line no-unused-vars
-        // eslint-disable-next-line no-unused-vars
-        gpa += parseInt(i.credits) * parseFloat(grade_point[i.grade]);
+        gpa += parseInt(i.credits) * grade_point[i.grade];
       }
+
+      if (credits === 0) return;
+
       context.commit("UPDATE_GPA", {
         gpa: gpa / credits,
         sem: payload[0].sem,
       });
     },
+
     calCGPA(context, payload) {
-      let grade_point = {
+      const grade_point = {
         O: 10,
         "A+": 9,
         A: 8,
@@ -80,29 +82,25 @@ export default new Vuex.Store({
         C: 5,
         U: 0,
       };
+
+      const selectedCourse = context.state.course;
       let total = 0.0;
       let creds = 0;
-      let valid = true;
-      for (let i in payload) {
-        for (let j of payload[i]) {
-          if (j.grade === "") {
-            valid = false;
-            break;
-          }
-          if (!valid) {
-            break;
-          }
-          if (j.grade === "U") {
-            continue;
-          }
-          creds += parseInt(j.credits);
-          total += parseFloat(grade_point[j.grade]) * parseInt(j.credits);
+
+      for (let sem in payload) {
+        for (let subject of payload[sem]) {
+          if (subject.course !== selectedCourse) continue;
+          if (!subject.grade || subject.grade === "U") continue;
+          creds += parseInt(subject.credits);
+          total += grade_point[subject.grade] * parseInt(subject.credits);
         }
       }
-      console.log(creds);
-      console.log(total);
+
+      if (creds === 0) return;
+
       context.commit("UPDATE_CGPA", total / creds);
     },
+
     updateCourse(context, payload) {
       context.commit("UPDATE_COURSE", payload);
     },

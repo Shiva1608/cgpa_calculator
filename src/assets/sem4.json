@@ -1,58 +1,66 @@
 [
-    {
-        "sem": 4,
-        "name" : "PROBABILITY AND STATISTICS",
-        "code" : "MA5451",
-        "credits" : "4",
-        "grade" : ""
-      },
-      {
-        "name": "THEORY OF COMPUTATION",
-        "code": "XC5451",
-        "credits": "4",
-        "sem": 4,
-        "grade": ""
-      },
-      {
-        "name": "DATABASE MANAGEMENT SYSTEMS",
-        "code": "XC5452",
-        "credits": "3",
-        "sem": 4,
-        "grade": ""
-      },
-      {
-        "name": "JAVA AND INTERNET PROGRAMMING",
-        "code": "XC5453",
-        "credits": "3",
-        "sem": 4,
-        "grade": ""
-      },
-      {
-        "name": "COMPUTER NETWORKS",
-        "code": "XC5454",
-        "sem": 4,
-        "credits": "4",
-        "grade": ""
-      },
-      {
-        "name": "JAVA AND INTERNET PROGRAMMING LABORATORY",
-        "code": "XC5461",
-        "sem": 4,
-        "credits": "2",
-        "grade": ""
-      },
-      {
-        "name": "DATABASE MANAGEMENT SYSTEMS LABORATORY",
-        "code": "XC5462",
-        "sem": 4,
-        "credits": "2",
-        "grade": ""
-      },
-      {
-        "name": "COMPUTATIONAL LABORATORY USING R",
-        "code": "XC5463",
-        "sem": 4,
-        "credits": "2",
-        "grade": ""
-      }
-    ]
+  {
+    "sem": 4,
+    "name": "PROBABILITY AND STATISTICS",
+    "code": "MA5451",
+    "credits": "4",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "THEORY OF COMPUTATION",
+    "code": "XC5451",
+    "credits": "4",
+    "sem": 4,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "DATABASE MANAGEMENT SYSTEMS",
+    "code": "XC5452",
+    "credits": "3",
+    "sem": 4,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "JAVA AND INTERNET PROGRAMMING",
+    "code": "XC5453",
+    "credits": "3",
+    "sem": 4,
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "COMPUTER NETWORKS",
+    "code": "XC5454",
+    "sem": 4,
+    "credits": "4",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "JAVA AND INTERNET PROGRAMMING LABORATORY",
+    "code": "XC5461",
+    "sem": 4,
+    "credits": "2",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "DATABASE MANAGEMENT SYSTEMS LABORATORY",
+    "code": "XC5462",
+    "sem": 4,
+    "credits": "2",
+    "grade": "",
+    "course": "common"
+  },
+  {
+    "name": "COMPUTATIONAL LABORATORY USING R",
+    "code": "XC5463",
+    "sem": 4,
+    "credits": "2",
+    "grade": "",
+    "course": "common"
+  }
+]

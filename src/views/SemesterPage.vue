@@ -1,17 +1,24 @@
 <template>
   <div>
-    <v-container>
+    <v-container
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-direction: column;
+      "
+    >
       <h1 class="mt-5" style="text-align: center">
         Semester {{ $route.params.sem[$route.params.sem.length - 1] }}
       </h1>
-      <br />
       <v-simple-table dark>
         <template v-slot:default>
           <thead>
             <tr>
               <th class="text-center">S.No</th>
-              <th class="text-center">CourseName</th>
-              <th class="text-center">CourseCode</th>
+              <th class="text-center">Course Name</th>
+              <th class="text-center">Course Code</th>
               <th class="text-center">Credits</th>
               <th class="text-center">Grade</th>
             </tr>
@@ -26,35 +33,47 @@
               <td class="text-center">{{ item.code }}</td>
               <td class="text-center">{{ item.credits }}</td>
               <td class="text-center" style="width: 7%">
-                <v-select :items="grades" v-model="item.grade"></v-select>
+                <v-select :items="grades" v-model="item.grade" />
               </td>
             </tr>
           </tbody>
         </template>
       </v-simple-table>
       <br />
-      <h2 style="text-align: center">
-        GPA :
-        {{
-          $store.state.GPA[
-            parseInt($route.params.sem[$route.params.sem.length - 1])
-          ]
-        }}
-      </h2>
-      <v-btn
-        rounded
-        color="success"
-        @click="$store.dispatch('addGPA', semData[$route.params.sem])"
-        >Calculate GPA</v-btn
-      >
-      <v-btn rounded color="grey" @click="calculateCGPA">Calculate CGPA</v-btn>
-      <NextButton
-        :nextsite="
-          (
-            parseInt($route.params.sem[$route.params.sem.length - 1]) + 1
-          ).toString()
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 16px;
         "
-      />
+      >
+        <h2 style="text-align: center">
+          GPA :
+          {{
+            $store.state.GPA[
+              parseInt($route.params.sem[$route.params.sem.length - 1])
+            ]
+          }}
+        </h2>
+        <v-btn
+          rounded
+          color="success"
+          @click="$store.dispatch('addGPA', current($route.params.sem))"
+        >
+          Calculate GPA
+        </v-btn>
+        <v-btn rounded color="grey" @click="calculateCGPA">
+          Calculate CGPA
+        </v-btn>
+        <NextButton
+          :nextsite="
+            (
+              parseInt($route.params.sem[$route.params.sem.length - 1]) + 1
+            ).toString()
+          "
+        />
+      </div>
     </v-container>
     <br />
   </div>
@@ -70,6 +89,9 @@ import sem5Data from "@/assets/sem5.json";
 import sem6Data from "@/assets/sem6.json";
 import sem7Data from "@/assets/sem7.json";
 import sem8Data from "@/assets/sem8.json";
+import sem9Data from "@/assets/sem9.json";
+import sem10Data from "@/assets/sem10.json";
+
 export default {
   name: "CgpaCalciSemesterPage",
   components: {
@@ -87,20 +109,37 @@ export default {
         sem6: sem6Data,
         sem7: sem7Data,
         sem8: sem8Data,
+        sem9: sem9Data,
+        sem10: sem10Data,
       },
     };
   },
-
-  mounted() {},
-
+  mounted() {
+    const currentSem = parseInt(this.$route.params.sem.replace("sem", ""));
+    if (currentSem === 1 && !this.$store.getters.courseGetter) {
+      const selected = window.prompt("Enter your course (e.g., cs, it):");
+      if (selected) {
+        this.$store.dispatch("updateCourse", selected.toLowerCase());
+      } else {
+        this.$router.push("/");
+      }
+    } else if (!this.$store.getters.courseGetter) {
+      alert("Please select a course first.");
+      this.$router.push("/");
+    }
+  },
   methods: {
-    current: function (data) {
-      return this.semData[data];
+    current(semKey) {
+      const selectedCourse = this.$store.getters.courseGetter.toLowerCase();
+      return this.semData[semKey].filter((item) => {
+        const course = item.course?.toLowerCase?.();
+        return course === selectedCourse || course === "common";
+      });
     },
-    calculateCGPA: function () {
+    calculateCGPA() {
       this.$store.dispatch("calCGPA", this.semData);
       window.alert(
-        "Your CGPA for the considering only the semesters you have entered and calculated GPAs for is calculated!\n\nCGPA : " +
+        "Your CGPA considering only the semesters you've calculated GPA for is:\n\nCGPA : " +
           this.$store.getters.CGPAGetter
       );
     },

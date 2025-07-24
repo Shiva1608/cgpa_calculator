@@ -36,7 +36,8 @@
     "code": "XC5252",
     "sem": 2,
     "credits": "3",
-    "grade": ""
+    "grade": "",
+    "course": "common"
   },
   {
     "name": "COMPUTER ARCHITECTURE",

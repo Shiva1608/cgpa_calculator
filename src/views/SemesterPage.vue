@@ -137,11 +137,13 @@ export default {
       });
     },
     calculateCGPA() {
-      this.$store.dispatch("calCGPA", this.semData);
-      window.alert(
-        "Your CGPA considering only the semesters you've calculated GPA for is:\n\nCGPA : " +
-          this.$store.getters.CGPAGetter
-      );
+      const updatedData = {};
+      for (const semKey in this.semData) {
+        updatedData[semKey] = this.current(semKey); // grabs up-to-date grades
+      }
+
+      this.$store.dispatch("calCGPA", updatedData);
+      alert("Your CGPA is: " + this.$store.getters.CGPAGetter.toFixed(2));
     },
   },
 };

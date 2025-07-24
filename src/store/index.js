@@ -73,33 +73,43 @@ export default new Vuex.Store({
     },
 
     calCGPA(context, payload) {
-      const grade_point = {
-        O: 10,
-        "A+": 9,
-        A: 8,
-        "B+": 7,
-        B: 6,
-        C: 5,
-        U: 0,
-      };
+  const grade_point = {
+    O: 10,
+    "A+": 9,
+    A: 8,
+    "B+": 7,
+    B: 6,
+    C: 5,
+    U: 0,
+  };
 
-      const selectedCourse = context.state.course;
-      let total = 0.0;
-      let creds = 0;
+  const selectedCourse = context.state.course.toLowerCase();
+  let total = 0.0;
+  let creds = 0;
 
-      for (let sem in payload) {
-        for (let subject of payload[sem]) {
-          if (subject.course !== selectedCourse) continue;
-          if (!subject.grade || subject.grade === "U") continue;
-          creds += parseInt(subject.credits);
-          total += grade_point[subject.grade] * parseInt(subject.credits);
-        }
+  for (const semKey in payload) {
+    const subjects = payload[semKey];
+    for (const subject of subjects) {
+      const course = subject.course?.toLowerCase?.();
+      if (course !== selectedCourse && course !== "common") continue;
+
+      if (!subject.grade || subject.grade === "U") continue;
+
+      const credit = parseInt(subject.credits);
+      const point = grade_point[subject.grade];
+
+      if (!isNaN(credit) && point !== undefined) {
+        creds += credit;
+        total += point * credit;
       }
+    }
+  }
 
-      if (creds === 0) return;
+  if (creds === 0) return;
 
-      context.commit("UPDATE_CGPA", total / creds);
-    },
+  context.commit("UPDATE_CGPA", total / creds);
+},
+
 
     updateCourse(context, payload) {
       context.commit("UPDATE_COURSE", payload);

@@ -36,7 +36,8 @@
     "code": "XC5354",
     "sem": 3,
     "credits": "4",
-    "grade": ""
+    "grade": "",
+    "course": "common"
   },
   {
     "name": "OPERATING SYSTEMS LABORATORY",

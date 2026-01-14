@@ -1,5 +1,7 @@
 # cgpa_calci
 
+## Hosted App: https://cgpacalculator-mscintegrated5yrs.netlify.app/
+
 ## Project setup
 ```
 npm install
